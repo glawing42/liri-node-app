@@ -84,8 +84,15 @@ if(liriArg === "movie-this"){
         console.log("Actors: " + JSON.parse(body).Actors);
        
         }else{
-            request("http://www.omdbapi.com/?t=mr+nobody+&y=&plot=short&r=json&tomatoes=true",function(error, response,body){
-                console.log(body);
+            request("http://www.omdbapi.com/?t=mr+nobody+&y=&plot=short&r=json&tomatoes=true&apikey=40e9cece",function(error, response,body){
+                console.log("Movie Title: " + JSON.parse(body).Title);  
+                console.log("Release Year: " + JSON.parse(body).Year);
+                console.log("IMDB Rating: " + JSON.parse(body).imdbRating);
+                console.log("Rotten Tomatoes Rating: " + JSON.parse(body).tomatoRating);
+                console.log("Country: " + JSON.parse(body).Country);
+                console.log("Language: " + JSON.parse(body).Language);
+                console.log("Plot: " + JSON.parse(body).Plot);
+                console.log("Actors: " + JSON.parse(body).Actors);
             
             })
         }

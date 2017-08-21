@@ -1,1 +1,55 @@
-# liri-node-app
+            liri-node-app
+
+Introduction
+
+I created a node.js app called LIRI. LIRI is like SIRI (from an iphone).
+
+It must be ran in the command line.
+
+LIRI is a Language Interpretation and Recognition Interface.
+
+LIRI will be a command line node app that takes in parameters and gives you back data.
+
+LIRI will do any of the below command when you enter them into the command line.
+
+my-tweets
+spotify-this-song
+movie-this
+do-what-it-says
+Type in node liri.js to get the instructions on how to enter the commands correctly. So if you were to type the below command you'd get the last 20 tweets I created (There may not be 20 tweets for me I just created an account)
+
+
+node liri.js my-tweets
+
+node liri.js spotify-this-song '<song name here>'
+shows the following information about the song in the terminal:
+
+artist(s)
+song name
+preview link of the song from spotify
+album that the song is a part of
+
+
+node liri.js movie-this '<movie name here>'
+this would output the following information to the terminal:
+
+* Title of the movie.
+* Year the movie came out.
+* IMDB Rating of the movie.
+* Rotten Tomatoes Rating of the movie.
+* Country where the movie was produced.
+* Language of the movie.
+* Plot of the movie.
+* Actors in the movie.
+
+
+
+node liri.js do-what-it-says
+These are the npm packages I used and are needed to run the app
+
+fs package in node
+twitter
+spotify
+request
+to install these npm packages run these commands one at a time.
+
