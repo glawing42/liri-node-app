@@ -69,7 +69,7 @@ if(liriArg === "spotify-this-song"){
 
 // OMDB
 if(liriArg === "movie-this"){ 
-    console.log(process.argv);
+    // console.log(process.argv);
     var movieTitle = process.argv[3];
     request("http://www.omdbapi.com/?t=" + movieTitle + "&y=&plot=short&r=json&tomatoes=true&apikey=40e9cece",function (error, response, body){
         
